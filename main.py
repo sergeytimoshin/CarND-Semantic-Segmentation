@@ -60,8 +60,8 @@ def upsample(x, num_classes, kernel_size=4, stride=2):
                                               kernel_size=kernel_size,
                                               stride=stride,
                                               padding='same',
-                                              initializer=initializer,
-                                              regularizer=regularizer)
+                                              weights_initializer=initializer,
+                                              weights_regularizer=regularizer)
 
 def conv_1x1(x, num_classes):
     kernel_size = 1
